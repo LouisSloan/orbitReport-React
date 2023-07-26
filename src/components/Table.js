@@ -1,4 +1,3 @@
-import satData from "./satData";
 
 const Table = ({ sat }) => {
   return (
@@ -12,13 +11,13 @@ const Table = ({ sat }) => {
         </tr>
         </thead>
         <tbody>
-        {satData.map((id, data) =>
+        {sat.map((data, id) =>
         <tr>
           <th key={sat.id}></th>
-          <td>{sat.name}</td>
-          <td>{sat.type}</td>
-          <td>{sat.date}</td>
-          <td>{sat.status}</td>
+          <td>{data.name}</td>
+          <td>{data.type}</td>
+          <td>{data.date}</td>
+          <td>{data.status}</td>
         </tr>
         )}
         </tbody>
