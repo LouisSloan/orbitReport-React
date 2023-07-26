@@ -16,8 +16,8 @@ const Table = ({ sat }) => {
           <th key={sat.id}></th>
           <td>{data.name}</td>
           <td>{data.type}</td>
-          <td>{data.date}</td>
-          <td>{data.status}</td>
+          <td>{data.launchDate}</td>
+          <td>{data.operational ? "Active" : "Inactive"}</td>
         </tr>
         )}
         </tbody>
